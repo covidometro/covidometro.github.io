@@ -1,24 +1,39 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="pt">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Covidometro disponibiliza os valores actuais da matriz de risco da covid-19 definida pelo Governo de Portugal. Inclui o valor da transmissibilidade (Rt) e o número de casos nos últimos 14 dias por 100 mil habitantes.">
+  <meta name="keywords" content="Portugal,Covid-19,Pandemia,Rt,Incidência">
 
+  <title>Covidometro</title>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Covidometro">
+  <meta property="og:image" content="https://covidometro.pt/assets/banner.png"/>
+  <meta property="og:description" content="Covidometro disponibiliza os valores actuais da matriz de risco da covid-19 definida pelo Governo de Portugal. Inclui o valor da transmissibilidade (Rt) e o número de casos nos últimos 14 dias por 100 mil habitantes.">
+  <meta property="og:url" content="https://covidometro.pt/">
+  <meta property="og:locale" content="pt_PT">
+  <style>
+    .gradient {
+      background-size: 100% 100%;
+      background-image: url("data:image/svg+xml;utf8,%3Csvg preserveAspectRatio='none' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='g'%3E%3Cstop offset='0' stop-color='%23fff' stop-opacity='0'%3E%3C/stop%3E%3Cstop offset='1' stop-color='%23fff' stop-opacity='1'%3E%3C/stop%3E%3C/linearGradient%3E%3Cmask id='m'%3E%3Crect x='0' y='0' width='1' height='1' fill='url(%23g)'%3E%3C/rect%3E%3C/mask%3E%3ClinearGradient id='a' gradientTransform='rotate(90)'%3E%3Cstop offset='0' stop-color='red'%3E%3C/stop%3E%3Cstop offset='1' stop-color='orange'%3E%3C/stop%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientTransform='rotate(90)'%3E%3Cstop offset='0' stop-color='green'%3E%3C/stop%3E%3Cstop offset='1' stop-color='orange'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' width='1' height='1' fill='url(%23a)' mask='url(%23m)'%3E%3C/rect%3E%3Crect x='0' y='0' width='1' height='1' fill='url(%23b)' mask='url(%23m)' transform='translate(1,1) rotate(180)'%3E%3C/rect%3E%3C/svg%3E");
+    }
+  </style>
+  <link rel="shortcut icon" type="image/png" href="https://covidometro.pt/assets/favicon.png">
 </head>
 <body style="margin:0; position: absolute; width: 100%; height: 100%;">
+  <div class="gradient" style="position: absolute; width: 100%; height: 100%;"></div>
   <div style="position: absolute; left: 42%; bottom: 44%;">
-    <div style="color: white; font-family: system-ui; margin-bottom: 8px;">(0.84, 105)</div>
+    <div style="color: white; font-family: system-ui; margin-bottom: 8px; font-size: 48px;">0.84 ; 105</div>
     <div style="position: absolute; background-color: white; border-radius: 50%; width: 16px; height: 16px;"></div>
   </div>
-  <div style="height: 50%; width: 100%;">
-    <div style="background-image: linear-gradient(45deg, rgb(253, 226, 48), rgb(254, 81, 15)); width: 50%; height: 100%; float: left;"></div>
-    <div style="background-color:rgb(255, 28, 26); width: 50%; height: 100%; float: right;"></div>
-  </div>
-  <div style="height: 50%; width: 100%;">
-    <div style="position: absolute; color: rgb(254, 81, 15); font-size: 24px; left: 14px; margin-top:-40px; font-family: system-ui;">casos p/ 100 mil</div>
-    <div style="position: absolute; color: white; font-size: 48px; left: 12px; margin-top: 8px; font-family: system-ui;">120</div>
-    <div style="background-image: linear-gradient(45deg, rgb(134, 210, 157), rgb(4, 117, 71)); width: 50%; height: 100%; float: left;"></div>
-    <div style="position: absolute; width: 100%; text-align: center; color: white; font-size: 48px; bottom: 8px; right: 20px; font-family: system-ui;">1</div>
-    <div style="position: absolute; width: 100%; text-align: center; color: rgb(254, 81, 15); font-size: 24px; bottom: 14px; font-family: system-ui;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R</div>
-    <div style="background-image: linear-gradient(45deg, rgb(253, 226, 48), rgb(254, 81, 15)); width: 50%; height: 100%; float: right;"></div>
+  <div style="position: absolute; color: white; font-size: 20px; left: 14px; font-family: system-ui; height: 100%; text-align: center; transform: rotate(180deg); writing-mode: vertical-lr;">Casos últimos 14 dias por 100 mil</div>
+  <div style="position: absolute; color: white; font-size: 48px; left: 12px; font-family: system-ui; top: 50%; transform: translateY(-50%); left: 56px;">120</div>
+  <div style="position: absolute; width: 100%; text-align: center; color: white; font-size: 48px; bottom: 16px; font-family: system-ui;">
+    <div>1</div>
+    <div style="font-size: 20px;">Transmissibilidade (Rt)</div>
   </div>
 </body>
 </html>
